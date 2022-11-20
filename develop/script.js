@@ -1,7 +1,6 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-$(function () {
     // TODO: Add a listener for click events on the save button. This code should
     // use the id in the containing time-block as a key to save the user input in
     // local storage. HINT: What does `this` reference in the click listener
@@ -14,11 +13,48 @@ $(function () {
     // attribute of each time-block be used to conditionally add or remove the
     // past, present, and future classes? How can Day.js be used to get the
     // current hour in 24-hour time?
+
+console.log(parseInt(dayjs().format("H")));
+
+
+//get current hour from dayjs and turn to integer
+var hourInt = parseInt(dayjs().format("H"));
+
+//integer variables for each hour block
+var hourPage9am = 9;
+var hourPage10am = 10;
+var hourPage11am = 11;
+var hourPage12pm = 12;
+var hourPage1pm = 13;
+var hourPage2pm = 14;
+var hourPage3pm = 15;
+var hourPage4pm = 16;
+var hourPage5pm = 17;
+
+//compare dayjs hour to hour block
+if (hourInt > hourPage10am) {
+    hour10.setAttribute('class', 'row time-block past');
+}
+
+
     //
     // TODO: Add code to get any user input that was saved in localStorage and set
     // the values of the corresponding textarea elements. HINT: How can the id
     // attribute of each time-block be used to do this?
     //
+
+
     // TODO: Add code to display the current date in the header of the page.
-  });
+var currentDay = $("#currentDay");
+
+function displayDate() {
+        // Sets interval in variable
+    var date = dayjs().format('dddd, MMMM D, YYYY');
+    currentDay.text(date);
+    }
+    displayDate();
+
+      
+      
+
   
