@@ -31,9 +31,77 @@ var hourPage3pm = 15;
 var hourPage4pm = 16;
 var hourPage5pm = 17;
 
-//compare dayjs hour to hour block
+//color codes each hour section according to the current hour of the day, past/present/future
+if (hourInt > hourPage9am) {
+    hour9.setAttribute('class', 'row time-block past');
+} else if (hourInt < hourPage9am) {
+    hour15.setAttribute('class', 'row time-block future');
+} else {
+    hour9.setAttribute('class', 'row time-block present');
+}
+
 if (hourInt > hourPage10am) {
     hour10.setAttribute('class', 'row time-block past');
+} else if (hourInt < hourPage10am) {
+    hour10.setAttribute('class', 'row time-block future');
+} else {
+    hour10.setAttribute('class', 'row time-block present');
+}
+
+if (hourInt > hourPage11am) {
+    hour11.setAttribute('class', 'row time-block past');
+} else if (hourInt < hourPage11am) {
+    hour11.setAttribute('class', 'row time-block future');
+} else {
+    hour11.setAttribute('class', 'row time-block present');
+}
+
+if (hourInt > hourPage12pm) {
+    hour12.setAttribute('class', 'row time-block past');
+} else if (hourInt < hourPage12pm) {
+    hour12.setAttribute('class', 'row time-block future');
+} else {
+    hour12.setAttribute('class', 'row time-block present');
+}
+
+if (hourInt > hourPage1pm) {
+    hour13.setAttribute('class', 'row time-block past');
+} else if (hourInt < hourPage1pm) {
+    hour13.setAttribute('class', 'row time-block future');
+} else {
+    hour13.setAttribute('class', 'row time-block present');
+}
+
+if (hourInt > hourPage2pm) {
+    hour14.setAttribute('class', 'row time-block past');
+} else if (hourInt < hourPage2pm) {
+    hour14.setAttribute('class', 'row time-block future');
+} else {
+    hour14.setAttribute('class', 'row time-block present');
+}
+
+if (hourInt > hourPage3pm) {
+    hour15.setAttribute('class', 'row time-block past');
+} else if (hourInt < hourPage3pm) {
+    hour15.setAttribute('class', 'row time-block future');
+} else {
+    hour15.setAttribute('class', 'row time-block present');
+}
+
+if (hourInt > hourPage4pm) {
+    hour16.setAttribute('class', 'row time-block past');
+} else if (hourInt < hourPage4pm) {
+    hour16.setAttribute('class', 'row time-block future');
+} else {
+    hour16.setAttribute('class', 'row time-block present');
+}
+
+if (hourInt > hourPage5pm) {
+    hour17.setAttribute('class', 'row time-block past');
+} else if (hourInt < hourPage5pm) {
+    hour17.setAttribute('class', 'row time-block future');
+} else {
+    hour17.setAttribute('class', 'row time-block present');
 }
 
 
