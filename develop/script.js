@@ -7,15 +7,21 @@
     // function? How can DOM traversal be used to get the "hour-x" id of the
     // time-block containing the button that was clicked? How might the id be
     // useful when saving the description in local storage?
-    //
+
+var txt10 = $('#txt10');
+
+var save10 = $('#save10');
+save10.on('click', function() {
+    console.log(txt10.value);
+    console.log('txt10.value');
+});
+
+
     // TODO: Add code to apply the past, present, or future class to each time
     // block by comparing the id to the current hour. HINTS: How can the id
     // attribute of each time-block be used to conditionally add or remove the
     // past, present, and future classes? How can Day.js be used to get the
     // current hour in 24-hour time?
-
-console.log(parseInt(dayjs().format("H")));
-
 
 //get current hour from dayjs and turn to integer
 var hourInt = parseInt(dayjs().format("H"));
