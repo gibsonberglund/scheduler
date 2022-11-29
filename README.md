@@ -16,7 +16,7 @@ N/A
 
 Write appointments or any other information into a given hour block, then click the save button on the right side. The saved information will be displayed in its given hour block each time the page is loaded or refreshed. To clear saved info, open the browser's inspector, navigate to storage, navigate to local storage, open the local storage drop down menu, right click on the url there and click on the delete option; this will erase the saved info and it will no longer display when the page loads.
 
-assets/sched-screenshot.png
+![screenshot](assets/sched-screenshot.png)
 
 ## Credits
 
